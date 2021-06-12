@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AKBO CLOUD</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            display: block;
+        }
+
+        li {
+            float: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0;
+        }
+
+        .header__navMenu>li>a {
+            width: 100px;
+            border-right: 1px solid black;
+            display: block;
+            padding: 12px 0;
+            height: 46px;
+            box-sizing: border-box;
+            text-align: center;
+
+            background-color: rgb(48, 48, 48);
+            text-decoration: none;
+        }
+
+        .active {
+            color: white;
+        }
+
+        .inactive {
+            color: gray;
+        }
+
+        .header_Search {
+            padding: 10px 10px 10px;
+        }
+
+        .header__inner {
+            padding: 0px;
+            width: 1080px;
+            display: flex;
+        }
+
+        .header {
+            width: 100%;
+            background-color: gray;
+            height: 46px;
+        }
+
+        .header__logoLink {
+            background-image: url(header_logo.png);
+            background-position-x: 12px;
+            background-size: 48px 22px;
+            width: 69px;
+            margin-left: unset;
+            text-shadow: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header role="banner" class="header">
+        <div class="header__inner">
+            <div class="header_left">
+                <div class="header__logo">
+                    <a href="/" title="Home" class="header__logoLink">AkboCloud</a>
+
+                </div>
+                <ul class="header__navMenu left">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="inactive">Library</a></li>
+                    <li><a href="#" class="inactive"> Store</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="header_middle">
+                <div class="header_search" role="search">
+                    <form class="headerSearch">
+                        <input class="headerSearch__input" placeholder="검색" type="search" autocomplete="off">
+                        <button class="headerSearch__submit submit" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+    </header>
+
+
+</body>
+
+</html>

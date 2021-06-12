@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AKBO CLOUD</title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font: 17px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #404040;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #menuBar {
+            overflow: hidden;
+            background: #98E0AD;
+        }
+
+        #menuBar_left ul {
+            width: 505px;
+            overflow: visible;
+        }
+
+        #menuBar_left ul li {
+            float: left;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            background: #98E0AD;
+            border-right: 1px solid rgb(102, 102, 102);
+
+        }
+
+        #menuBar_left ul li a {
+            display: block;
+        }
+
+        #menuBar_left ul li a:hover {
+            background: #138535;
+            color: #fff;
+        }
+
+        #menuBar_left ul li input {
+            padding: 5px;
+            font-size: 14px;
+            margin-left: 12px;
+            border: 1px;
+        }
+
+        #menuBar_middle {
+            padding: 11px;
+        }
+
+        .headerSearch__input {
+            padding: 4.5px;
+        }
+
+        .home_main {
+            height: 250px;
+            border-bottom: 1px solid rgb(219, 219, 219);
+            margin: 30px;
+            margin-right: 0px;
+        }
+
+        .filter {
+            margin: 20px;
+            padding: 30px;
+            width: 200px;
+            border-left: 1px solid rgb(218, 218, 218);
+        }
+
+        .center_main {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 1080px;
+        }
+
+        #menuBar_right {
+            padding: 14px;
+        }
+
+        #sign a {
+            color: #777777;
+        }
+
+        #sign a:hover {
+            color: black;
+        }
+
+        .main_left {
+            flex: auto;
+            margin: 30px;
+            margin-right: 0px;;
+        }
+        .main_left div h3{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_v">
+        <div id=menuBar class="center_main">
+            <div id="menuBar_left" class="navi">
+                <ul>
+                    <li><a><img src="header_logo.png" width="100%"
+                                style="height: 30px; width: auto; vertical-align: middle;"></a>
+                    </li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="inactive">Library</a></li>
+                    <li><a href="#" class="inactive">Store</a></li>
+                    <li><a href="#" class="inactive">MyPlace</a></li>
+                </ul>
+            </div>
+            <div id="menuBar_middle" class="navi">
+                <form class="headerSearch">
+                    <input class="headerSearch__input" placeholder="검색" type="search" autocomplete="off">
+                    <button type="submit" style="padding: 5px;">Search</button>
+                </form>
+            </div>
+            <div id="menuBar_right" class="navi">
+                <div id="sign">
+                    <a href="#">로그인</a>
+                    ·
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main center_main">
+            <div class="main_left" style="width: 100%-200px;">
+                <div class="charts_top home_main">
+                    <h3>Charts</h3>
+                    <div class= "chart_list">
+                        차트리스트
+                    </div>
+                </div>
+                <div class="charts_new home_main">
+                    <h3>New</h3>
+                    <div class= "new_list">
+                        새로 업로드된 악보
+                    </div>
+                </div>
+                <div class="popular_up home_main">
+                    <h3>Likes</h3>
+                    <div class= "like_list">
+                        좋아요 순 악보
+                    </div>
+                </div>
+            </div>
+            <div class="filter">
+                <h3 style="margin: 10px;">Filter</h3>
+                <div class="filter_genre">
+                    <h4>Genre</h4>
+                    <ul class="Genre">
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Pop</a></li>
+                        <li><a href="#">Balad</a></li>
+                        <li><a href="#">Hiphop</a></li>
+                    </ul>
+                </div>
+                <div class="filter_instrument">
+                    <h4>Instrument</h4>
+                    <ul class="Instrument">
+                        <li><a href="#">Guitar</a></li>
+                        <li><a href="#">Piano</a></li>
+                        <li><a href="#">Drum</a></li>
+                        <li><a href="#">Percussion</a></li>
+                        <li><a href="#">Bass</a></li>
+                        <li><a href="#">Flute</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
